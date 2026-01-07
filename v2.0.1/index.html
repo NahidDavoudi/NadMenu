@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>NadMenu - منوی آنلاین </title>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Swiper.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body class="bg-stone-100 min-h-screen pb-32 antialiased">
+        <!-- Header -->
+        <header class="sticky top-0 z-40">
+            <div class="bg-amber-800 w-full h-14 flex items-center justify-center shadow-md safe-area-inset-top">
+                <h1 class="text-white text-xl font-bold">NadMenu</h1>
+            </div>
+        </header>
+        
+        <!-- Main Content - Product Cards Grid -->
+        <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-6">
+            <div id="products-grid" class="grid grid-cols-2 gap-2 sm:gap-3">
+                <!-- Product cards will be dynamically inserted here -->
+            </div>
+        </main>
+        
+        <!-- Category Carousel Portal (Fixed at bottom) -->
+        <nav id="category-portal" class="fixed bottom-0 z-50 safe-area-inset-bottom">
+            <div class="bg-amber-900 rounded-t-3xl shadow-2xl pt-3 sm:pt-4 pb-4 sm:pb-6 px-3 sm:px-4">
+                <div class="swiper category-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Category slides will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+        
+        <!-- Swiper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Custom Scripts -->
+        <script src="js/carousel.js"></script>
+        <script src="js/cards.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

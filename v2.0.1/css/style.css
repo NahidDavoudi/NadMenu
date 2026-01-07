@@ -1,0 +1,117 @@
+/* ===================================
+   NadMenu - Mobile-First Styles
+   منوی آنلاین هوشمند کافه رستوران
+   =================================== */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* ===================================
+   Mobile-First Base Styles
+   =================================== */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    overscroll-behavior: none;
+    touch-action: pan-y;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===================================
+   Safe Area Support (iOS Notch)
+   =================================== */
+
+.safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ===================================
+   Touch & Interaction Optimizations
+   =================================== */
+
+button,
+a,
+.clickable {
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* ===================================
+   Mobile-First Responsive Breakpoints
+   Base: Mobile (< 640px)
+   sm: 640px+
+   md: 768px+
+   lg: 1024px+
+   =================================== */
+
+/* Category Carousel Portal Styles */
+#category-portal {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    max-width: 500px;
+}
+
+@media (min-width: 640px) {
+    #category-portal {
+        width: calc(100% - 48px);
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    #category-portal {
+        max-width: 700px;
+    }
+}
+
+/* Category Carousel Styles */
+.category-swiper .swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* Product Card Transitions */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.product-card:active {
+    transform: scale(0.98);
+}
+
+/* Smooth animations for GSAP Flip */
+.flip-record {
+    will-change: transform, width, height;
+}

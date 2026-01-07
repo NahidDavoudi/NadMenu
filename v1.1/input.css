@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fallback / Default Variables */
+    --color-primary: #6B4423;
+    --color-secondary: #D4A574;
+    --color-accent: #B8860B;
+    --color-bg: #faf8f3;
+    --color-text: #3E2723;
+    --color-card-bg: #e6ccb2;
+    --font-main: 'Abol', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-text font-main overflow-x-hidden;
+  }
+}
+
+/* Custom Utilities for Animation */
+.clip-circle {
+  clip-path: circle(0% at 50% 50%);
+}
+.full-clip-circle {
+  clip-path: circle(150% at 50% 50%);
+}

@@ -1,0 +1,151 @@
+{
+  "tenants": {
+    "cafe_1": {
+      "id": "cafe_1",
+      "branding": {
+        "name": "Pizza Felfeli",
+        "logo": "./assets/imgs/logo.png",
+        "theme": {
+          "colors": {
+            "primary": "#6B4423",
+            "secondary": "#D4A574",
+            "accent": "#B8860B",
+            "background": "#faf8f3",
+            "text": "#3E2723",
+            "card_bg": "#e6ccb2"
+          },
+          "fonts": {
+            "main": "Abol, sans-serif"
+          }
+        }
+      },
+      "time_rules": {
+        "morning": { "start": "06:00", "end": "11:59" },
+        "noon": { "start": "12:00", "end": "16:59" },
+        "evening": { "start": "17:00", "end": "23:59" }
+      },
+      "moods": [
+        { "id": "focus", "label": "تمرکز", "color": "#8D6E63" },
+        { "id": "party", "label": "جشن", "color": "#FFCA28" },
+        { "id": "relax", "label": "آرامش", "color": "#81C784" },
+        { "id": "energy", "label": "انرژی", "color": "#FF7043" }
+      ],
+      "categories": [
+        {
+          "id": "coffee",
+          "title": "قهوه",
+          "image": "./assets/imgs/categories/coffee-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/d7c1a4c1-6e5c-4a0c-8a8e-0f8a8e0f8a8e/coffee-cup.json",
+          "description": "قهوه‌های دمی و اسپرسو"
+        },
+        {
+          "id": "tea",
+          "title": "چای و دمنوش",
+          "image": "./assets/imgs/categories/tea-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/a1b2c3d4-e5f6-7890-abcd-ef1234567890/tea-pot.json",
+          "description": "چای‌های خوش‌عطر و دمنوش‌ها"
+        },
+        {
+          "id": "cold_drinks",
+          "title": "نوشیدنی سرد",
+          "image": "./assets/imgs/categories/cold-drinks-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/b2c3d4e5-f6a7-8901-bcde-f23456789012/cold-drink.json",
+          "description": "نوشیدنی‌های خنک و تازه"
+        },
+        {
+          "id": "shakes",
+          "title": "شیک‌ها",
+          "image": "./assets/imgs/categories/shake-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/c3d4e5f6-a7b8-9012-cdef-345678901234/milkshake.json",
+          "description": "شیک‌های غلیظ و خوشمزه"
+        },
+        {
+          "id": "pizza",
+          "title": "پیتزا",
+          "image": "./assets/imgs/categories/pizza-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/d4e5f6a7-b8c9-0123-defa-456789012345/pizza-slice.json",
+          "description": "پیتزاهای ایتالیایی و آمریکایی"
+        },
+        {
+          "id": "burger",
+          "title": "برگر",
+          "image": "./assets/imgs/categories/burger-bg.jpg",
+          "lottie_url": "https://lottie.host/embed/e5f6a7b8-c9d0-1234-efab-567890123456/burger-layers.json",
+          "description": "برگرهای خانگی و گریل"
+        }
+      ],
+      "items": [
+        {
+          "id": "espresso",
+          "category_id": "coffee",
+          "name": "اسپرسو",
+          "description": "قهوه غلیظ با روست مدیوم",
+          "price": 65000,
+          "image": "./assets/imgs/products/product_693aaacf607e2_1765452495.png",
+          "moods": ["focus", "energy"],
+          "time_availability": ["morning", "noon", "evening"]
+        },
+        {
+          "id": "latte",
+          "category_id": "coffee",
+          "name": "لاته",
+          "description": "اسپرسو با شیر بخار داده شده",
+          "price": 85000,
+          "image": "./assets/imgs/products/product_693aab0db5c42_1765452557.png",
+          "moods": ["relax", "focus"],
+          "time_availability": ["morning", "noon", "evening"]
+        },
+        {
+          "id": "black_tea",
+          "category_id": "tea",
+          "name": "چای سیاه",
+          "description": "چای ایرانی با لیمو",
+          "price": 45000,
+          "image": "./assets/imgs/products/tea.jpg",
+          "moods": ["relax"],
+          "time_availability": ["morning", "noon", "evening"]
+        },
+        {
+          "id": "iced_mojito",
+          "category_id": "cold_drinks",
+          "name": "موهیتو",
+          "description": "لیمو، نعنا، یخ و سودا",
+          "price": 92000,
+          "image": "./assets/imgs/products/mojito.jpg",
+          "moods": ["party", "energy"],
+          "time_availability": ["noon", "evening"]
+        },
+        {
+          "id": "choc_shake",
+          "category_id": "shakes",
+          "name": "شیک شکلات",
+          "description": "بستنی شکلاتی، شیر، سس شکلات",
+          "price": 120000,
+          "image": "./assets/imgs/products/product_693aab0db5c42_1765452557.png",
+          "moods": ["relax", "party"],
+          "time_availability": ["noon", "evening"]
+        },
+        {
+          "id": "pepperoni",
+          "category_id": "pizza",
+          "name": "پیتزا پپرونی",
+          "description": "پپرونی، پنیر موزارلا، سس مخصوص",
+          "price": 210000,
+          "image": "./assets/imgs/main/fast-food.jpg",
+          "moods": ["party", "energy"],
+          "time_availability": ["noon", "evening"]
+        },
+        {
+          "id": "cheese_burger",
+          "category_id": "burger",
+          "name": "چیزبرگر",
+          "description": "گوشت گریل، پنیر چدار، کاهو، گوجه",
+          "price": 185000,
+          "image": "./assets/imgs/products/burger.jpg",
+          "moods": ["party", "energy"],
+          "time_availability": ["noon", "evening"]
+        }
+      ]
+    }
+  }
+}

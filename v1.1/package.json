@@ -1,0 +1,16 @@
+{
+  "name": "pizza-felfeli-menu",
+  "version": "2.0.0",
+  "description": "Menu system for Pizza Felfeli restaurant and cafe",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./assets/css/main.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./assets/css/main.css --minify"
+  },
+  "keywords": ["menu", "restaurant", "cafe"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
+
